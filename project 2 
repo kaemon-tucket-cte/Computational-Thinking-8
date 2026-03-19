@@ -1,0 +1,94 @@
+print("Welcome To Kaemon's Sports Personality Quiz")
+print("Type A, B, or C\n")
+
+print ("USE ALL UPPERCASE!!!! HIT ENTER TO START")
+ans = input()
+
+team_score = 0
+solo_score = 0
+fun_score = 0
+
+
+print("what sport do you like?")
+print("A. basketball")
+print("B. golf")
+print("C. playing for fun")
+ans = input()
+
+if ans == "A":
+    team_score += 1
+elif ans == "B":
+    solo_score += 1
+elif ans == "C":
+    fun_score += 1
+
+
+print("pick one")
+print("A. team")
+print("B. alone")
+print("C. with friends")
+ans = input()
+
+if ans == "A":
+    team_score += 1
+elif ans == "B":
+    solo_score += 1
+elif ans == "C":
+    fun_score += 1
+
+
+print("what do you like most?")
+print("A. winning with a team")
+print("B. beating your own record")
+print("C. just having fun")
+ans = input()
+
+if ans == "A" and team_score >= 0:
+    team_score += 1
+elif ans == "B" and solo_score >= 0:
+    solo_score += 1
+elif ans == "C" and fun_score >= 0:
+    fun_score += 1
+
+
+print("choose")
+print("A. practice")
+print("B. training")
+print("C. games")
+ans = input()
+
+if ans == "A" or ans == "a":
+    team_score += 1
+elif ans == "B" or ans == "b":
+    solo_score += 1
+elif ans == "C" or ans == "c":
+    fun_score += 1
+
+
+print("what sounds best?")
+print("A. playing on a team")
+print("B. competing alone")
+print("C. playing for fun")
+ans = input()
+
+if ans == "A":
+    team_score += 1
+elif ans == "B":
+    solo_score += 1
+elif ans == "C":
+    fun_score += 1
+
+
+print("Team:", team_score)
+print("Solo:", solo_score)
+print("Fun:", fun_score)
+
+
+if team_score > solo_score and team_score > fun_score:
+    print("you are a TEAM player")
+elif solo_score > team_score and solo_score > fun_score:
+    print("you are a SOLO player")
+elif fun_score > team_score and fun_score > solo_score:
+    print("you play for FUN")
+else:
+    print("you are a mix")                                                                                                                                             
