@@ -1,7 +1,7 @@
 print("Welcome To Kaemon's Sports Personality Quiz")
 print("Type A, B, or C\n")
 
-print ("USE ALL UPPERCASE!!!! HIT ENTER TO START")
+print ("HIT ENTER TO START")
 ans = input()
 
 team_score = 0
